@@ -1,0 +1,38 @@
+media:
+  input: immagini
+  output: immagini
+
+content:
+  - name: opere
+    label: Opere
+    type: file
+    path: opere.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Titolo
+        type: string
+        required: true
+
+      - name: file
+        label: Foto del quadro
+        type: image
+        required: true
+
+      - name: medium
+        label: Tecnica
+        type: string
+
+      - name: dimensions
+        label: Misure
+        type: string
+        description: "Esempio: 40 × 40 cm"
+
+      - name: year
+        label: Anno
+        type: string
+
+      - name: description
+        label: Descrizione
+        type: text
